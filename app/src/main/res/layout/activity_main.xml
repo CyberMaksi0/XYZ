@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/current_time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/hour_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_time_text_view"
+        android:layout_marginTop="16dp"
+        android:layout_toStartOf="@+id/divider"
+        android:hint="Godzina"
+        android:inputType="number"
+        android:textAlignment="center"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_time_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+    </View>
+    <EditText
+        android:id="@+id/minute_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_time_text_view"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/divider"
+        android:hint="Minuta"
+        android:inputType="number"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hour_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="setAlarm"
+        android:text="Ustaw alarm"/>
+
+</RelativeLayout>

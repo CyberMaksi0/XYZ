@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Styl dla elementów interfejsu użytkownika -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Kolor tła -->
+        <item name="android:windowBackground">@color/light_seafoam</item>
+    </style>
+
+</resources>
